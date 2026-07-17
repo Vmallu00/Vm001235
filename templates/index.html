@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ System Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚡ RAILWAY VM DASHBOARD</h1>
+            <div class="status-badge" id="statusBadge">🟢 ONLINE</div>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">CPU</div>
+                <div class="stat-value" id="cpuValue">0%</div>
+                <div class="progress-bar"><div class="progress-fill" id="cpuBar"></div></div>
+                <div class="stat-sub">Load: <span id="loadAvg">0.00</span></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">RAM</div>
+                <div class="stat-value" id="ramValue">0%</div>
+                <div class="progress-bar"><div class="progress-fill" id="ramBar"></div></div>
+                <div class="stat-sub">Used: <span id="ramUsed">0 GB</span> / <span id="ramTotal">0 GB</span></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">DISK</div>
+                <div class="stat-value" id="diskValue">0%</div>
+                <div class="progress-bar"><div class="progress-fill" id="diskBar"></div></div>
+                <div class="stat-sub">Used: <span id="diskUsed">0 GB</span> / <span id="diskTotal">0 GB</span></div>
+            </div>
+            <div class="stat-card full-width">
+                <div class="stat-label">UPTIME</div>
+                <div class="stat-value" id="uptimeValue">0h 0m</div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+                                                                                   </html>
